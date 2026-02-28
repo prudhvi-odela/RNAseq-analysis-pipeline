@@ -1,0 +1,34 @@
+# Raw sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Alignment files
+*.sam
+*.bam
+*.bai
+
+# Large output files
+*.gtf
+*.gff
+*.bed
+
+# Temporary files
+*.log
+*.tmp
+*.out
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+
+# R files
+.Rhistory
+.RData
+
+# Conda environments
+env/
