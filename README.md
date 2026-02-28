@@ -169,4 +169,4 @@ Bioinformatics Enthusiast | RNA-Seq Analysis | Computational Biology
 
 ## 📜 License
 
-This project is for educational and research purposes.
+This project is licensed undeer the MIT License - see the LICENSE file for details.
