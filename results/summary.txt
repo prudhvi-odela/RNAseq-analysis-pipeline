@@ -1,0 +1,13 @@
+RNA-Seq Analysis Summary
+
+Total Reads: ~1.36 million
+Alignment Rate: ~99%
+Tool Used:
+- FastQC
+- Trimmomatic
+- HISAT2
+- Samtools
+- FeatureCounts
+
+Outcome:
+Successfully generated gene-level expression counts from bacterial RNA-Seq data.
