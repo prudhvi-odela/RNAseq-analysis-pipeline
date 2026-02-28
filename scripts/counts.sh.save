@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Gene Quantification using FeatureCounts
+
+featureCounts -p \
+-a ../reference/annotation.gff \
+-o ../counts/counts.txt \
+../aligned/sample_sorted.bam
+nano visualization.R
+# Read counts file
+counts <- read.table("../counts/counts.txt",
+                     header = TRUE,
+                     comment.char = "#")
+
+# Extract gene counts
+gene_counts <- counts[,7:ncol(counts)]
+
+# Plot total reads
+png("../results/total_reads.png")
+
+barplot(colSums(gene_counts),
+        main = "Total Reads per Sample",
+        col = "steelblue",
+        las = 2)
+
+dev.off()
+cd ~/RNAseq_Project
+ls scripts
+
